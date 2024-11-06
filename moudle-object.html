@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module Object</title>
+  </head>
+  <body>
+    <script type="module">
+      import * as iqsan from "./scripts/default-class.js";
+
+      console.log(iqsan.firstName);
+      console.log(iqsan.lastName);
+
+      iqsan.hello();
+
+      const person = new iqsan.person();
+    </script>
+  </body>
+</html>
